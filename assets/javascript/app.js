@@ -19,7 +19,12 @@ var triviaQA = [
 		"option2": "Option 2",
 		"answer": "Answer",
 	},
-
+	{
+		"question": "Question 4",
+		"option1": "Option 1",
+		"option2": "Option 2",
+		"answer": "Answer",
+	},
 ]
 
 //Timer start on button click
@@ -66,5 +71,11 @@ $('#startTrivia').on("click", function() {
 
 	  $("#timer").html(count + " secs");
 	}
+
+	function gameDisplay() {
+		$('#question').html(triviaQA[0].question);
+	}
+	gameDisplay();
+
 
 })

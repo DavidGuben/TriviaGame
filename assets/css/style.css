@@ -1,5 +1,7 @@
 #container {
 	text-align:center;
+	margin:0 !auto;
+	margin-top:300px;
 }
 h1 {
 	text-align:center;
@@ -7,6 +9,19 @@ h1 {
 	font-weight:bold;
 	font-family:sans-serif;
 }
+h2 {
+	text-align:center;
+	font-size:24px;
+	font-weight:bold;
+	font-family:sans-serif;
+}
 .timerStyle {
 	color:red;
+}
+.centerButton {
+	text-align:center;
+	margin-left:47%;
+	margin-top:25px;
+	width:90px;
+	height:34px;
 }
