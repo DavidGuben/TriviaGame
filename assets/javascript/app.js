@@ -74,7 +74,10 @@ $('#startTrivia').on("click", function() {
 
 	function gameDisplay() {
 		$('#question').html(triviaQA[0].question);
+		$('#option1').html(triviaQA[0].option1).addClass('li');
+		$('#option2').html(triviaQA[0].option2).addClass('li');
 	}
+
 	gameDisplay();
 
 
