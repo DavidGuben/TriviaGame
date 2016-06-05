@@ -1,6 +1,16 @@
-#main-quiz-holder {
+body {
+	background-image:url('../images/overwatchbg.png');
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+	color:#000;
+	font-size:25px;
+}
+
+#triviaGame {
 	margin: 0 auto;
-	position: relative;background: #FCFCFC;
+	position: relative;
     border:1px solid #dedede;
 	 box-shadow:0 1px 5px #D9D9D9,inset 0 10px 20px #F1F1F1;
 	 -o-box-shadow:0 1px 5px #D9D9D9,inset 0 10px 20px #F1F1F1;
@@ -48,20 +58,32 @@ h2.qTitle {
 
 .questionDiv ul.answers li {
 	padding: 5px 50px;
-	margin: 12px 0;
+	margin: 12px 10px 0px 0px;
 	color: #4c4c4c;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 0 6px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 0 6px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 0 6px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
-  background: #f6f6f6;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#d4d4d4));
-  background: -webkit-linear-gradient(#f6f6f6, #d4d4d4);
-  background-image: -moz-linear-gradient(top, #f6f6f6, #d4d4d4);
-  background-image: -moz-gradient(top, #f6f6f6, #d4d4d4);
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: rgba(255,255,255,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #0199d9;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
   border: 1px solid #a1a1a1;	
 }
 
@@ -75,24 +97,16 @@ h2.qTitle {
 
 .questionDiv .prev, .questionDiv .next {
 	height: 19px; cursor: pointer; padding: 5px 10px;
-   font-size: 16px;
+   font-size: 24px;
+   font-weight:bold;
    padding: 5px 10px;
   color: #4c4c4c;
   border-radius: 4px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-  background: #6fb2e5;
-  box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
-   -o-box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
-   -webkit-box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
-   -moz-box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
+  text-decoration: none;
 }
 
 .questionDiv .next  {
-  background: #77d125;
-  box-shadow: 0 1px 5px #3caa00, inset 0 10px 20px #c9ffb6;
-   -o-box-shadow: 0 1px 5px #3caa00, inset 0 10px 20px #c9ffb6;
-   -webkit-box-shadow: 0 1px 5px #3caa00, inset 0 10px 20px #c9ffb6;
-   -moz-box-shadow: 0 1px 5px #3caa00, inset 0 10px 20px #c9ffb6;
+  text-decoration: none;
 }
 
 
@@ -140,17 +154,17 @@ h2.qTitle {
 
 .btnPrev {
 	padding-left: 24px;
-	background: url(img/back.png) left no-repeat;
+	background: url(../images/back.png) left no-repeat;
 }
 
 .btnNext {
 	padding-right: 24px;
-	background: url(img/forward.png) right no-repeat;
+	background: url(../images/forward.png) right no-repeat;
 }
 
 .btnShowResult{
 	padding-left: 24px;
-	background: url(img/confirm.png) left no-repeat;
+	background: url(../images/confirm.png) left no-repeat;
 }
 
 .btnStart {
@@ -158,7 +172,7 @@ h2.qTitle {
 	margin: 40px auto 0 auto;
 }
 
-.btnContainer {
+.btnDiv {
 	margin: 20px 0 30px 0;
 	padding: 5px;
 }
@@ -203,12 +217,12 @@ h2.qTitle {
 
 .correct span {
 	padding: 0 20px;
-	background: url(img/confirm.png) left no-repeat;
+	background: url(../images/confirm.png) left no-repeat;
 }
 
 .wrong span {
 	padding: 0 20px;
-	background: url(img/delete.png) left no-repeat;
+	background: url(../images/delete.png) left no-repeat;
 }
 
 #answer-key {

@@ -1,4 +1,7 @@
+
 #main-quiz-holder {
+	background-image:url(../images/overwatchbg.png);
+	background-color:grey;
 	margin: 0 auto;
 	position: relative;background: #FCFCFC;
     border:1px solid #dedede;

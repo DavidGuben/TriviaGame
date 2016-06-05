@@ -81,18 +81,18 @@
 				return returnString;
 			}
 
-				//hide progress and notices for later
+			  //hide progress and notices for later
 			  progressKeeper.hide();
 			  notice.hide();
 
 			  //make all the radio inputs unchecked by default
 			  $("#triviaGame input:radio").attr("checked", false);
 			
-			  //click function for selecting answers
+			    //click function for selecting answers
 				$('.answers li input').click(function() {
-
+						//remove selected class on click
 						$(this).parents('.answers').children('li').removeClass("selected");
-
+							//add selected class on click
         					$(this).parents('li').addClass('selected');
 
  				});
@@ -113,7 +113,7 @@
                
             });	  
 
-			  		//next button click functionality
+			//next button click functionality
             $('.btnNext').click(function(){
 					
 					var tempCheck = $(this).parents('.questionDiv').find('input[type=radio]:checked');
@@ -208,3 +208,5 @@
             });
 
 })
+
+//<script>var answerKey = { answers: [ 'a', 'c', 'b', 'a', 'c', '', '', ''] }</script>
